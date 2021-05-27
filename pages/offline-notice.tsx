@@ -44,11 +44,15 @@ export default function Offline({ logs = [], config }) {
             content.
           </a>
           <div className="stream-info-container">
-            <Text className="stream-info-label">Streaming URL:</Text>
+            <Text strong className="stream-info-label">
+              Streaming URL:
+            </Text>
             <Paragraph className="stream-info-box" copyable>
               {generateStreamURL(instanceUrl, rtmpServerPort)}
             </Paragraph>
-            <Text className="stream-info-label">Stream Key:</Text>
+            <Text strong className="stream-info-label">
+              Stream Key:
+            </Text>
             <Paragraph className="stream-info-box" copyable={{ text: streamKey }}>
               *********************
             </Paragraph>
